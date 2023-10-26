@@ -6,10 +6,34 @@
 //
 
 import SwiftUI
+import Simple
+
 
 struct Home: View {
+    @State var value: Int = 0
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text("value")
+            Text("\(value)")
+        }
+        Button(action: {
+            value = Int(Simple.SimpleAddOne(Int32(value)))
+            
+        }){
+            Text("Call AddOne")
+                .fontWeight(.semibold)
+                .contentTransition(.identity)
+                .foregroundColor(.white)
+                .padding(.vertical, 15)
+                .padding(.horizontal, 40)
+                .background{
+                    Capsule()
+                        .fill(.black)
+                }
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.bottom, 10)
+        .padding(.top, 25)
     }
 }
 

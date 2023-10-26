@@ -11,6 +11,8 @@
 		0A1656772AE9F81A008807B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1656762AE9F81A008807B3 /* ContentView.swift */; };
 		0A1656792AE9F81C008807B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1656782AE9F81C008807B3 /* Assets.xcassets */; };
 		0A16567C2AE9F81C008807B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A16567B2AE9F81C008807B3 /* Preview Assets.xcassets */; };
+		0A1656842AE9FAE1008807B3 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1656832AE9FAE1008807B3 /* Home.swift */; };
+		0A1656862AE9FBB8008807B3 /* Simple.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1656852AE9FBB8008807B3 /* Simple.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		0A1656762AE9F81A008807B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0A1656782AE9F81C008807B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A16567B2AE9F81C008807B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0A1656832AE9FAE1008807B3 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		0A1656852AE9FBB8008807B3 /* Simple.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Simple.xcframework; path = ../../sample_go_lib/simple/Simple.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1656862AE9FBB8008807B3 /* Simple.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +56,8 @@
 		0A1656732AE9F81A008807B3 /* SwiftWithGoLib */ = {
 			isa = PBXGroup;
 			children = (
+				0A1656852AE9FBB8008807B3 /* Simple.xcframework */,
+				0A1656822AE9FAD3008807B3 /* View */,
 				0A1656742AE9F81A008807B3 /* SwiftWithGoLibApp.swift */,
 				0A1656762AE9F81A008807B3 /* ContentView.swift */,
 				0A1656782AE9F81C008807B3 /* Assets.xcassets */,
@@ -65,6 +72,14 @@
 				0A16567B2AE9F81C008807B3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A1656822AE9FAD3008807B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A1656832AE9FAE1008807B3 /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A1656772AE9F81A008807B3 /* ContentView.swift in Sources */,
+				0A1656842AE9FAE1008807B3 /* Home.swift in Sources */,
 				0A1656752AE9F81A008807B3 /* SwiftWithGoLibApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
